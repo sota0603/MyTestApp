@@ -1,0 +1,15 @@
+<h1>Listing Faculties</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th></th>
+  </tr>
+
+  <% @Faculty.each do |faculty| %>
+    <tr>
+      <td><%= faculty.title %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+    </tr>
+  <% end %>
+</table>
